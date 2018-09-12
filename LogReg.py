@@ -47,7 +47,6 @@ from sklearn.feature_selection import RFE
 from sklearn.linear_model import LogisticRegression
 
 logreg = LogisticRegression()
-
 rfe = RFE(logreg, 18)
 rfe = rfe.fit(data_final[X], data_final[y] )
 print(rfe.support_)
